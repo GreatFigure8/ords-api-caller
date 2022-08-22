@@ -1,16 +1,29 @@
 {
-  "name": "src",
+  "name": "ords-api-helper",
   "version": "1.0.0",
-  "description": "",
+  "description": "This package helps to call an Oracle REST Data Service enabled database by providing a standards based API around the methods and entities.",
   "main": "index.js",
   "scripts": {
     "test": "mocha",
     "compile": "tsc --declaration",
     "prepublish": "yarn run compile"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "ORDS",
+    "ADB",
+    "OCI",
+    "Oracle Rest Data Services"
+  ],
+  "author": "Jonathan Stevenson",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jstevenson81/ords-api-caller.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jstevenson81/ords-api-caller/issues"
+  },
+  "homepage": "https://github.com/jstevenson81/ords-api-caller",
   "dependencies": {
     "axios": "^0.27.2",
     "lodash": "^4.17.21",
