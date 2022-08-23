@@ -19,7 +19,7 @@ There are a few types of messages you can create using this package.
 > All of these methods other than the GET one allow for paging. See the documentation on **offset** and **limit** to
 > understand more about how to page results.
 
-### Pagingafdv
+### Paging
 
 Each GET method allows for request parameters. The request parameters look like the following:
 
