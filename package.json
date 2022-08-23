@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha",
-    "compile": "tsc --declaration",
+    "compile": "rm -rf ./dist/**/* && tsc --declaration",
     "prepublish": "yarn run compile"
   },
   "keywords": [
