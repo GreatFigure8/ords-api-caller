@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef12e383-662d-4c71-8f1a-0c6ab1a23e25" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/ordsQueryBuilder.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/ordsQueryBuilder.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/ordsRunner.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/ordsRunner.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/ordsQueryBuilder.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/ordsQueryBuilder.test.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +26,9 @@
   </component>
   <component name="OptimizeOnSaveOptions">
     <option name="myRunOnSave" value="true" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectId" id="2DkLNlT8OiqUj0sDWCdttaJZNUa" />
   <component name="ProjectViewState">
@@ -47,7 +53,7 @@
     "nodejs_package_manager_path": "yarn",
     "rearrange.code.on.save": "true",
     "settings.editor.selected.configurable": "preferences.sourceCode.Markdown",
-    "ts.external.directory.path": "/Users/jonathanstevenson/Library/Application Support/JetBrains/Toolbox/apps/WebStorm/ch-0/222.3345.108/WebStorm.app/Contents/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external",
+    "ts.external.directory.path": "/Users/jonathanstevenson/Source/ords-api-caller/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -70,7 +76,7 @@
       <updated>1661238097099</updated>
       <workItem from="1661238098208" duration="3501000" />
       <workItem from="1661248112328" duration="180000" />
-      <workItem from="1661300956087" duration="2075000" />
+      <workItem from="1661300956087" duration="2474000" />
     </task>
     <servers />
   </component>

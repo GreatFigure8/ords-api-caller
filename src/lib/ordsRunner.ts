@@ -1,14 +1,14 @@
-import axios, { AxiosError, AxiosInstance } from 'axios'
-import _ from 'lodash'
-import { IEntity } from './interfaces/IEntity'
-import { IActionParams } from './interfaces/IActionParams'
-import { IResponse } from './interfaces/IResponse'
-import { IOrdsResponse } from './interfaces/IOrdsResponse'
-
 /**
  * This is the main class in the library.  It enables calling
  * REST methods on a ORDS enabled endpoint
  */
+import axios, { AxiosError, AxiosInstance } from 'axios'
+import IActionParams from './interfaces/IActionParams'
+import IEntity from './interfaces/IEntity'
+import { IOrdsResponse } from './interfaces/IOrdsResponse'
+import { IResponse } from './interfaces/IResponse'
+import _ from 'lodash'
+
 export default class OrdsRunner<T extends IEntity> {
   /**
    * The axios instance used to run the requests
