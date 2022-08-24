@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef12e383-662d-4c71-8f1a-0c6ab1a23e25" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/ordsQueryBuilder.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/ordsQueryBuilder.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/ordsRunner.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/ordsRunner.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/ordsQueryBuilder.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/ordsQueryBuilder.test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/testing-workflow.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/build-and-test-workflow.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +73,7 @@
       <updated>1661238097099</updated>
       <workItem from="1661238098208" duration="3501000" />
       <workItem from="1661248112328" duration="180000" />
-      <workItem from="1661300956087" duration="2474000" />
+      <workItem from="1661300956087" duration="2587000" />
     </task>
     <servers />
   </component>
