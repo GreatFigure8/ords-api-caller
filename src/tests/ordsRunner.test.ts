@@ -1,9 +1,9 @@
-import { describe } from 'mocha'
 import MockAdapter from 'axios-mock-adapter'
 import axios from 'axios'
 import OrdsRunner from '../lib/ordsRunner'
 import { expect } from 'chai'
 import { IResponse } from '../lib/interfaces/IResponse'
+import { describe } from 'mocha'
 
 interface TestHttpResp {
   message: string
@@ -11,11 +11,12 @@ interface TestHttpResp {
 }
 
 describe('ords runner tests', () => {
-  const postEndpoint = '/post'
+  const mockAdapter = new MockAdapter(axios)
   const getEndpoint = '/get'
   const getErrorEndpoint = '/error'
+  const putEndpoint = '/put'
+  const postEndpoint = '/post'
 
-  const mockAdapter = new MockAdapter(axios)
   before(() => {
     const getResp = OrdsRunner.makeResponse<TestHttpResp>()
     getResp.ordsResponse.items.push({
@@ -24,6 +25,12 @@ describe('ords runner tests', () => {
     })
     mockAdapter.onGet(getEndpoint).replyOnce(200, getResp.ordsResponse)
     mockAdapter.onGet(getErrorEndpoint).networkError()
+
+    const putResp: TestHttpResp = {
+      message: 'test put',
+      id: 3
+    }
+    mockAdapter.onPut(putEndpoint).replyOnce(200, putResp)
 
     const postResp: TestHttpResp = {
       message: 'test post',
@@ -83,5 +90,26 @@ describe('ords runner tests', () => {
     expect(resp.error).to.not.be.undefined
     expect(resp.error?.message).to.not.be.empty
     expect(resp.error?.code).to.equal('400')
+  })
+
+  it('upsert should run a PUT and return a API response with one item', async () => {
+    const expected: IResponse<TestHttpResp> = OrdsRunner.makeResponse<TestHttpResp>()
+    expected.ordsResponse.items.push({
+      message: 'test put',
+      id: 3
+    })
+
+    const runner = new OrdsRunner<TestHttpResp>('none')
+    const resp = await runner.upsert({
+      action: '/put',
+      body: {
+        message: 'test put',
+        id: 3
+      }
+    })
+
+    expect(resp.ordsResponse.items.length).to.equal(1)
+    expect(resp.ordsResponse.items[0].message).to.equal('test put')
+    expect(resp.ordsResponse.items[0].id).to.equal(3)
   })
 })

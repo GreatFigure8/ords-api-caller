@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef12e383-662d-4c71-8f1a-0c6ab1a23e25" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/testing-workflow.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/build-and-test-workflow.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mocharc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.mocharc.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/ordsRunner.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/ordsRunner.test.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +49,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.standard": "",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs.mocha.mocha_node_package_dir": "/Users/jonathanstevenson/Source/ords-api-caller/node_modules/mocha",
     "nodejs_package_manager_path": "yarn",
     "rearrange.code.on.save": "true",
     "settings.editor.selected.configurable": "preferences.sourceCode.Markdown",
@@ -63,6 +66,45 @@
       <recent name="$PROJECT_DIR$/src/lib/interfaces" />
     </key>
   </component>
+  <component name="RunManager" selected="Mocha.ords runner tests">
+    <configuration name="ords runner tests" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <ui>bdd</ui>
+      <extra-mocha-options />
+      <test-kind>SUITE</test-kind>
+      <test-file>$PROJECT_DIR$/src/tests/ordsRunner.test.ts</test-file>
+      <test-names>
+        <name value="ords runner tests" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="ords runner tests.upsert should run a PUT and return a API response with one item" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <ui>bdd</ui>
+      <extra-mocha-options />
+      <test-kind>TEST</test-kind>
+      <test-file>$PROJECT_DIR$/src/tests/ordsRunner.test.ts</test-file>
+      <test-names>
+        <name value="ords runner tests" />
+        <name value="upsert should run a PUT and return a API response with one item" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Mocha.ords runner tests" />
+        <item itemvalue="Mocha.ords runner tests.upsert should run a PUT and return a API response with one item" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -73,7 +115,8 @@
       <updated>1661238097099</updated>
       <workItem from="1661238098208" duration="3501000" />
       <workItem from="1661248112328" duration="180000" />
-      <workItem from="1661300956087" duration="2587000" />
+      <workItem from="1661300956087" duration="3187000" />
+      <workItem from="1661321282322" duration="1872000" />
     </task>
     <servers />
   </component>
