@@ -1,5 +1,5 @@
-import { IEntity } from './IEntity'
 import { IOrdsLink } from './IOrdsLink'
+import IEntity from './IEntity'
 
 export interface IOrdsResponse<T extends IEntity> {
   items: T[]
