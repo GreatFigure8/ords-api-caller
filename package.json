@@ -6,6 +6,7 @@
   "scripts": {
     "test": "mocha",
     "compile": "tsc --declaration",
+    "compile-fresh": "rm -rf ./dist/**/* && tsc --declaration",
     "prepublish": "yarn run compile"
   },
   "keywords": [

@@ -1,15 +1,19 @@
-import { IEntity } from './IEntity'
-
 /**
+ * @typedef {object} IActionParams - Defines a
  * The options used to define a request.
- * <pre>
- * action is the action we want to call and is mandatory
- * delete defines if we are calling a delete operation.  Assumed to be false
- * body is the entity we want to PUT, POST or DELETE
- * </pre>
+ *  @property {string} action defines the url of the action
+ *  @property {IPagingParams} paging defines the paging parameters offset and limit to allow for paging results on the server
+ *  @property {boolean} delete is the request an delete or not.  it is considered false if undefined
+ *  @property {IEntity} body the entity we're acting on
  */
-export interface IActionParams<T extends IEntity> {
+
+import IEntity from './IEntity'
+import IPagingParams from './IPagingParams'
+
+/** @type {IActionParams} */
+export default interface IActionParams<T extends IEntity> {
   action: string
+  paging?: IPagingParams
   delete?: boolean
   body?: T
 }
