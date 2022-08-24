@@ -5,33 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef12e383-662d-4c71-8f1a-0c6ab1a23e25" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.github/testing-workflow.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/testing-workflow.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/testing-workflow.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/testing-workflow.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/index.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/IOrdsLink.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/IOrdsLink.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/IOrdsResponse.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/IOrdsResponse.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/IResponse.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/IResponse.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/interfaces/IActionParams.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/interfaces/IActionParams.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/interfaces/IEntity.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/interfaces/IEntity.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/interfaces/IOrdsPagingParams.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/interfaces/IOrdsPagingParams.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/ordsQueryBuilder.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/ordsQueryBuilder.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/ordsRunner.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/ordsRunner.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tests/ordsQueryBuilder.test.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tests/ordsQueryBuilder.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tests/ordsRunner.test.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tests/ordsRunner.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/interfaces/IOrdsResponse.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/interfaces/IOrdsResponse.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/interfaces/IResponse.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/interfaces/IResponse.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +71,7 @@
       <updated>1661238097099</updated>
       <workItem from="1661238098208" duration="3501000" />
       <workItem from="1661248112328" duration="180000" />
-      <workItem from="1661300956087" duration="1609000" />
+      <workItem from="1661300956087" duration="1927000" />
     </task>
     <servers />
   </component>
