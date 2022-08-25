@@ -1,7 +1,7 @@
-import { IOrdsLink } from './IOrdsLink'
 import IEntity from './IEntity'
+import { IOrdsLink } from './IOrdsLink'
 
-export interface IOrdsResponse<T extends IEntity> {
+export default interface IOrdsResponse<T extends IEntity> {
   items: T[]
   hasMore: boolean
   limit: number

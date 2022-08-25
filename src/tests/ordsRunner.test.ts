@@ -1,14 +1,10 @@
-import MockAdapter from 'axios-mock-adapter'
 import axios from 'axios'
-import OrdsRunner from '../lib/ordsRunner'
+import MockAdapter from 'axios-mock-adapter'
 import { expect } from 'chai'
-import { IResponse } from '../lib/interfaces/IResponse'
 import { describe } from 'mocha'
 
-interface TestHttpResp {
-  message: string
-  id: number
-}
+import { IResponse } from '../lib/interfaces/IResponse'
+import OrdsRunner from '../lib/ordsRunner'
 
 describe('ords runner tests', () => {
   const mockAdapter = new MockAdapter(axios)
@@ -39,19 +35,7 @@ describe('ords runner tests', () => {
     mockAdapter.onPost(postEndpoint).replyOnce(200, postResp)
   })
 
-  it('should run a GET and return data', async () => {
-    const ordsRunner = new OrdsRunner<TestHttpResp>('none')
-    const resp = await ordsRunner.get({ action: getEndpoint })
-    expect(resp.ordsResponse.items[0].message).to.equal('test get')
-  })
 
-  it('should run a GET and return an error', async () => {
-    const ordsRunner = new OrdsRunner<TestHttpResp>('none')
-    const resp = await ordsRunner.get({ action: getErrorEndpoint })
-    expect(resp.error).to.not.be.undefined
-    expect(resp.error?.isAxiosError).to.be.true
-    expect(resp.error?.message).to.equal('Network Error')
-  })
 
   it('upsert should run a POST and return a API response with one item', async () => {
     const expected: IResponse<TestHttpResp> = OrdsRunner.makeResponse<TestHttpResp>()
