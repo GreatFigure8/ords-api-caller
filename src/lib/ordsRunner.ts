@@ -3,11 +3,12 @@
  * REST methods on a ORDS enabled endpoint
  */
 import axios, { AxiosError, AxiosInstance } from 'axios'
+import _ from 'lodash'
+
 import IActionParams from './interfaces/IActionParams'
 import IEntity from './interfaces/IEntity'
-import { IOrdsResponse } from './interfaces/IOrdsResponse'
+import IOrdsResponse from './interfaces/IOrdsResponse'
 import { IResponse } from './interfaces/IResponse'
-import _ from 'lodash'
 
 export default class OrdsRunner<T extends IEntity> {
   /**

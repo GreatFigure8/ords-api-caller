@@ -1,5 +1,5 @@
 import axios from 'axios'
-import MockAdapter from 'axios-mock-adapter/types'
+import MockAdapter from 'axios-mock-adapter'
 
 import { IResponse } from '../lib/interfaces/IResponse'
 import OrdsRunner from '../lib/ordsRunner'
