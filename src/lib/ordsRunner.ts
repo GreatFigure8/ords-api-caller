@@ -30,7 +30,7 @@ export default class OrdsRunner<T extends IEntity> {
    * @returns {IResponse{T}}
    */
   public static makeResponse<T extends IEntity> (): IResponse<T> {
-    return {
+    const resp: IResponse<T> = {
       ordsResponse: {
         offset: 0,
         links: [],
@@ -41,6 +41,7 @@ export default class OrdsRunner<T extends IEntity> {
       },
       error: undefined
     }
+    return resp
   }
 
   private static mapErrorToAxiosError (err: Error): AxiosError {

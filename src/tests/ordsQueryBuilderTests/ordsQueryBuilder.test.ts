@@ -1,8 +1,9 @@
 import { expect } from 'chai'
-import OrdsQueryBuilder from '../lib/ordsQueryBuilder'
-import IPagingParams from '../lib/interfaces/IPagingParams'
 
-describe('ORDS query tests', () => {
+import IPagingParams from '../../lib/interfaces/IPagingParams'
+import OrdsQueryBuilder from '../../lib/ordsQueryBuilder'
+
+describe('ordsQueryBuilder tests', () => {
   it('should create a querystring with paging parameters', () => {
     const params: IPagingParams = {
       limit: 25,
