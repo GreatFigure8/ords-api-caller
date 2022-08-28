@@ -1,6 +1,7 @@
 import { AxiosError } from 'axios'
-import { IOrdsResponse } from './IOrdsResponse'
+
 import IEntity from './IEntity'
+import IOrdsResponse from './IOrdsResponse'
 
 /**
  * The interface defining what we should expect back from any call to an ORDS

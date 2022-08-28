@@ -3,11 +3,12 @@
  * REST methods on a ORDS enabled endpoint
  */
 import axios, { AxiosError, AxiosInstance } from 'axios'
+import _ from 'lodash'
+
 import IActionParams from './interfaces/IActionParams'
 import IEntity from './interfaces/IEntity'
-import { IOrdsResponse } from './interfaces/IOrdsResponse'
+import IOrdsResponse from './interfaces/IOrdsResponse'
 import { IResponse } from './interfaces/IResponse'
-import _ from 'lodash'
 
 export default class OrdsRunner<T extends IEntity> {
   /**
@@ -29,7 +30,7 @@ export default class OrdsRunner<T extends IEntity> {
    * @returns {IResponse{T}}
    */
   public static makeResponse<T extends IEntity> (): IResponse<T> {
-    return {
+    const resp: IResponse<T> = {
       ordsResponse: {
         offset: 0,
         links: [],
@@ -40,6 +41,7 @@ export default class OrdsRunner<T extends IEntity> {
       },
       error: undefined
     }
+    return resp
   }
 
   private static mapErrorToAxiosError (err: Error): AxiosError {
