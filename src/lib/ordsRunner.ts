@@ -59,10 +59,12 @@ export default class OrdsRunner<T extends IEntity> {
    * @param {string} action
    * @returns {Promise<Response{T}}
    */
-  async get ({ action }: IActionParams<T>): Promise<IResponse<T>> {
+  async get ({ action, paging }: IActionParams<T>): Promise<IResponse<T>> {
     const resp: IResponse<T> = OrdsRunner.makeResponse<T>()
     try {
-      const axiosResp = await axios.get<IOrdsResponse<T>>(action)
+      const realLimit = !_.isUndefined(paging) ? paging.limit : 500
+      const realOffset = !_.isUndefined(paging) ? paging.offset : 0
+      const axiosResp = await this.runner.get<IOrdsResponse<T>>(`${action}?offset=${realOffset}&limit=${realLimit}`)
       resp.ordsResponse = axiosResp.data
       return resp
     } catch (e) {
@@ -109,7 +111,7 @@ export default class OrdsRunner<T extends IEntity> {
   }: IActionParams<T>): Promise<IResponse<T>> {
     const resp: IResponse<T> = OrdsRunner.makeResponse<T>()
     try {
-      const axiosResp = await axios.post<T>(action, body)
+      const axiosResp = await this.runner.post<T>(action, body)
       resp.ordsResponse.items.push(axiosResp.data)
       return resp
     } catch (e) {
@@ -131,7 +133,7 @@ export default class OrdsRunner<T extends IEntity> {
     const resp: IResponse<T> = OrdsRunner.makeResponse<T>()
     try {
       if (_.isUndefined(body)) throw new Error('To delete an item, there must be a body')
-      const axiosResp = await axios.delete<T>(`${action}/${body.id}`)
+      const axiosResp = await this.runner.delete<T>(`${action}/${body.id}`)
       resp.ordsResponse.items.push(axiosResp.data)
       return resp
     } catch (e) {
@@ -152,7 +154,7 @@ export default class OrdsRunner<T extends IEntity> {
   }: IActionParams<T>): Promise<IResponse<T>> {
     const resp: IResponse<T> = OrdsRunner.makeResponse<T>()
     try {
-      const axiosResp = await axios.put<T>(action, body)
+      const axiosResp = await this.runner.put<T>(action, body)
       resp.ordsResponse.items.push(axiosResp.data)
       return resp
     } catch (e) {
