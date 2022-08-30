@@ -3,4 +3,5 @@
  */
 export default interface IEntity {
   id: number
+  [k: string]: any
 }
