@@ -10,11 +10,13 @@ describe('ordsRunner POST integration tests', function () {
   before(() => { runner = new OrdsRunner<IPod>('https://g6b2527b56da518-convertfinitedev.adb.us-ashburn-1.oraclecloudapps.com/ords/admin') })
 
   it('should add a pod', async () => {
-    const newPod: IPod = {
-      pod_id: 0,
-      pod_name: DateTime.now().toMillis(),
-      pod_svc_user: DateTime.now().toMillis(),
-      pod_svc_user_pass: DateTime.now().toMillis(),
+    const newPod: IPod =
+    {
+      iq: 0,
+      pod_id: 20,
+      pod_name: DateTime.now().toMillis().toString(),
+      pod_svc_user: DateTime.now().toMillis().toString(),
+      pod_svc_user_pass: DateTime.now().toMillis().toString(),
       pod_url: `https://${DateTime.now().toMillis()}.com`
     }
   })

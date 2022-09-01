@@ -49,6 +49,5 @@
     "nodemon": "^2.0.19",
     "ts-node": "^10.9.1",
     "typescript": "*"
-  },
-  "packageManager": "yarn@3.2.3"
+  }
 }

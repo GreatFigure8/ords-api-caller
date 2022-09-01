@@ -25,5 +25,6 @@ describe('ordsRunner GET all integration tests', function () {
     expect(pods).to.not.be.undefined
     expect(pods.ordsResponse).to.not.be.undefined
     expect(pods.ordsResponse.items.length).to.be.greaterThan(0)
+    expect('').to.be.empty
   })
 })
